@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Услуги</title>
+    <link rel="stylesheet" href={% static "css/stylegrid4.css"%}>
+</head>
+
+<body>
+	<div class = "navigation">
+        <div class = "logo">
+            <object id = "logo" type="image/svg+xml" data= {% static "res/logo.svg"%} width = 100%>
+			    <img src="res/logo.png" alt="Фолбэк">
+		    </object>
+        </div>
+        <div class = "info">
+            г. Самара, пр. Ленина, д. 1<br>
+            <p>+7 (960) 833-44-55</p>
+        </div>
+        <div class = "menu"> 
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ГЛАВНАЯ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+        </div>
+    </div>
+
+    <div class = "body">
+
+        <div class = "headers">
+            <h1>УСЛУГИ</h1> <hr>
+        </div>
+
+        <div class="content1"> 
+            Мы рады предложить вам групповые и индивидуальные занятия по коррекции речи и общения детей с 1,5 лет. Занятия ведут логопеды, дефектологи, музыкальные руководители.
+        </div>
+
+        <div class="square" id="square1">
+            <h1>Консультация логопеда</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед высшей категории<br>
+                Любовь Александровна Борисова</span>
+                <div><strong><ins>Запись лично у логопеда: </ins></strong></div>&nbsp; <span>8-919-800-72-72</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>	1-18 лет, взрослые</span>
+                <div><strong><ins>План консультации: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>диагностика речевого развития​ и уровня сформированности предпосылок устной/письменной речи</li>
+                        <li>диагностика особенностей строения и функционирования органов артикуляции</li>
+                        <li>обсуждение результатов диагностики с родителями</li>
+                        <li>предоставление рекомендаций по дальнейшей работе и обследованиям</li>
+                    </ul>
+                </span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>60 минут</span>
+                <div><strong><ins>Стоимость:</ins></strong></div> &nbsp;<span>2500р. </span>
+            </div>
+        </div>
+
+        <div class="square" id="square2">
+            <h1>Индивидуальные занятия с логопедом</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>2-14 лет, взрослые</span>
+                <div><strong><ins>Виды занятий: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>постановка и автоматизация звуков у детей от 5 лет (абонемент на 8 занятий 8000 р.)</li>
+                        <li>растормаживание (запуск) речи неговорящих детей (абонемент на 8 занятий 9600 р.)</li>
+                        <li>логопедический массаж (абонемент на 10 занятий 11000 р.)</li>
+                        <li>развитие лексико-грамматического строя речи (абонемент на 8 занятий 9600 р.)</li>
+                        <li>подготовка к обучению грамоте (абонемент на 8 занятий 8000 р.)</li>
+                    </ul>
+                </span>
+                <div><strong><ins>Занятия у Борисовой Л.А.</ins></strong></div>&nbsp; <span>1700 р. за 1 занятие</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>60 минут</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2-3 раза</span>
+            </div>
+        </div>
+
+        <div class="lines">
+            <hr>
+                <h1>ГРУППОВЫЕ ЗАНЯТИЯ</h1>
+            <hr id="down">
+        </div>
+        
+        <div class="square" id="square3">
+            <h1>Обучайка+ (для детей с ЗПРР)</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед-дефектолог, без родителей</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>4-5 лет</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    детям с ЗПР, которым требуется коррекция речи и познавательных функций на групповых занятиях с дефектологом. <br>
+                    <strong>ВАЖНО:</strong> звукопроизношением на данных занятиях не занимаются, это только индивидуальная работа
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>6-8 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>2 часа</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на 8 занятий: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>1 мес. 8000 р. (1000 р. за 1 занятие)</li>
+                        <li>3 мес. 7200 р. (900 р. за 1 занятие)</li>
+                        <li>6 мес. 6400 р. (800 р. за 1 занятие)</li>
+                        <li>Разовое посещение 1200 р.</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <div class="square" id="square4">
+            <h1>Запуск речи с мамой</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед, присутствие родителей</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>2-3 года</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    ЗРР и неговорящим детям
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>4-6 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>40 минут</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на 8 занятий: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>1 мес. 5200р. (650 р. за 1 занятие)</li>
+                        <li>3 мес. 4800 р. (600 р. за 1 занятие)</li>
+                        <li>Разовое посещение 800 р.</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <div class="square" id="square5">
+            <h1>Обучайка</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед, без родителей</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>3-4 года</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    говорящим детям, которым требуется расширение словаря, усложнение фраз, самостоятельное рассказывание по представлению
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>4-6 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>2 часа</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на 8 занятий: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>1 мес. 7200 р. (900 р. за 1 занятие)</li>
+                        <li>3 мес. 6800 р. (850 р. за 1 занятие)</li>
+                        <li>6 мес. 6400 р. (800 р. за 1 занятие)</li>
+                        <li>Разовое посещение 1000 р.</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <div class="square" id="square6">
+            <h1>Чтение с логопедом</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>5-6 лет</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    детям без видимых речевых проблем, детям с нарушением фонематических процессов
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>4-6 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>40 минут</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на 8 занятий: </ins></strong></div>&nbsp; <span>5600 р</span>
+            </div>
+        </div>
+
+        <div class="square" id="square7">
+            <h1>Подготовка к школе</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>учитель начальных классов</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>5-7 лет</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    детям, которые идут в школу через 1-2 года
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>6-8 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>60 минут</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    <ul>
+                        <li>1 мес. 6200 р./мес</li>
+                        <li>3 мес. 5600 р./мес</li>
+                        <li>6 мес. 5200 р./мес</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <div class="square" id="square8">
+            <h1>Обучение рассказыванию</h1>
+            <hr>
+            <div class="cont">
+                <div><strong><ins>Специалист: </ins></strong></div>&nbsp; <span>логопед</span>
+                <div><strong><ins>Возраст: </ins></strong></div>&nbsp; <span>5-7 лет</span>
+                <div><strong><ins>Кому подходит: </ins></strong></div>&nbsp;  <div>&nbsp;</div><span class="spisok">	
+                    детям с бедным словарным запасом, грамматическими трудностями, сложностями составления пересказа, самостоятельного рассказывания о событиях, описания объектов окружающего мира
+                </span>
+                <div><strong><ins>Наполняемость группы: </ins></strong></div>&nbsp; <span>4-6 детей</span>
+                <div><strong><ins>Продолжительность:</ins></strong></div>&nbsp; <span>40 минут</span>
+                <div><strong><ins>Количество занятий: </ins></strong></div> &nbsp;<span>2 раза</span>
+                <div><strong><ins>Стоимость абонемента на 8 занятий: </ins></strong></div>&nbsp; <span>5000 р</span>
+            </div>
+        </div>
+
+        <div class="lines" id="lines2">
+            <hr>
+                <h1>РАСПИСАНИЕ</h1>
+            <hr id="down">
+        </div>
+
+        <div class="schedule">
+            <table>
+                <tr><th></th><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th></tr> 
+                <tr><td rowspan="2">Запуск речи с мамой (2-3 года)</td><td>11.30</td><td></td><td></td><td>11.30</td><td></td></tr> 
+                <tr><td></td><td>19.00</td><td></td><td>19.00</td><td></td></tr>
+                <tr><td>Развитие речи (3-4 года)</td><td></td><td>16.30</td><td></td><td>16.30</td><td></td></tr>
+                <tr><td>Чтение с логопедом</td><td>17.50</td><td></td><td>17.50</td><td></td><td></td></tr>
+            </table>
+        </div>
+
+    </div>
+    
+    
+    <div class="footer">
+        <hr> <p>Мы делаем свою работу на „отлично”!</p> <hr id="right">
+        <div class="finfo">
+            <div class = "menu"> 
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЗАНЯТИЯ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+            </div>
+            <form>
+                <fieldset>
+                <input type="text" placeholder = "ИМЯ" name = "name" required>
+                <input type="email" placeholder = "E-MAIL" name = "mail" required>
+                <input type="text" placeholder = "ТЕЛЕФОН" name = "tel" required>
+                <select required name = "type">
+                    <option selected>ВИД ЗАНЯТИЙ</option>
+                    <option> </option>
+                </select>
+                <input type="submit" name = "send" value="ОТПРАВИТЬ"> 
+            </fieldset>
+            </form>
+            <div class = "info">
+                <p>г. Самара, пр. Ленина, д. 1<br>
+                +7 (960) 833-44-55<br>
+                logoclub63@yandex.ru<br>
+                <a href="#"><object class = "link" type="image/svg+xml" data= {% static "res/youtube.svg"%} width = 10%>
+                    <img src="res/youtube.png" alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data= {% static "res/vk.svg"%} width = 10%>
+                    <img src="res/vk.png" alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data= {% static "res/watsap.svg"%} width = 7%>
+                    <img src="res/watsap.png" alt="Фолбэк">
+                </object></a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

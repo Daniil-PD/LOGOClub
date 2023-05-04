@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Статьи</title>
+    <link rel="stylesheet" href={% static "css/stylegrid5.css"%}>
+</head>
+
+<body>
+	<div class = "navigation">
+        <div class = "logo">
+            <object id = "logo" type="image/svg+xml" data= {% static "res/logo.svg"%} width = 100%>
+			    <img src="res/logo.png" alt="Фолбэк">
+		    </object>
+        </div>
+        <div class = "info">
+            г. Самара, пр. Ленина, д. 1<br>
+            <p>+7 (960) 833-44-55</p>
+        </div>
+        <div class = "li" id = "back" onclick="location.href='#';" style="cursor:pointer;">&lt;</div>
+        <div class = "menu"> 
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЗАНЯТИЯ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+        </div>
+    </div>
+
+    <div class = "body">
+
+        <div class = "headers">
+            <h1>СТАТЬИ</h1> <hr>
+        </div>
+
+        <div class = "posts_zone">
+            {% for post in posts %}
+            <div class="stateblock" id={{post.id}}>
+                <h3>{{ post.title }}</h3>
+                <object type="image/svg+xml" data= {% static "res/staryell.svg"%} width = 10%>
+                    <img src="res/staryell.png" alt="Фолбэк">
+                </object>
+                <div class="text">
+                    {{ post.text }}
+                </div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЧИТАТЬ</div>   
+            </div>
+            {% endfor %} 
+        </div>
+
+
+
+
+
+    </div>
+    
+    
+    <div class="footer">
+        <hr> <p>Мы делаем свою работу на „отлично”!</p> <hr id="right">
+        <div class="finfo">
+            <div class = "menu"> 
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЗАНЯТИЯ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+            </div>
+            <form>
+                <fieldset>
+                <input type="text" placeholder = "ИМЯ" name = "name" required>
+                <input type="email" placeholder = "E-MAIL" name = "mail" required>
+                <input type="text" placeholder = "ТЕЛЕФОН" name = "tel" required>
+                <select required name = "type">
+                    <option selected>ВИД ЗАНЯТИЙ</option>
+                    <option> </option>
+                </select>
+                <input type="submit" name = "send" value="ОТПРАВИТЬ"> 
+            </fieldset>
+            </form>
+            <div class = "info">
+                <p>г. Самара, пр. Ленина, д. 1<br>
+                +7 (960) 833-44-55<br>
+                logoclub63@yandex.ru<br>
+                <a href="#"><object class = "link" type="image/svg+xml" data= {% static "res/youtube.svg"%} width = 10%>
+                    <img src="res/youtube.png" alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data= {% static "res/vk.svg"%} width = 10%>
+                    <img src="res/vk.png" alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data= {% static "res/watsap.svg"%} width = 7%>
+                    <img src="res/watsap.png" alt="Фолбэк">
+                </object></a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

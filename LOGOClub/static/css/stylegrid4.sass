@@ -1,0 +1,123 @@
+@import 'mixins'
+@include navigation
+@include body
+@include footer
+$border: 2px solid #000000
+
+body
+    padding: 0px
+    margin: 0px
+
+.body
+    display: grid
+    grid-template-rows: repeat(39, 90px)
+    background-image: url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/backgroundserv.svg")
+    .headers
+        grid-column: 2/11 
+        display: grid
+        grid-template-rows: repeat(3, 90px)
+        grid-template-columns: repeat(9, 1fr)
+    hr
+        grid-column: 4/-1
+        margin: 14% 0%
+    h1
+        grid-column: 1/4
+    .content1
+        grid-row: 4
+        grid-column: 3 / 10 
+        @include font1
+        font-size: 1.5em 
+    .square
+        @include font1
+        font-size: 1.5em
+        h1
+            @include font2
+            font-size: 1.4em
+            text-align: center
+        hr
+            margin-top: 0%
+            margin-bottom: 5%
+        border: $border
+        background: linear-gradient(to bottom, #FFFFFF, #A7DDE9)
+        padding: 5%
+        .cont
+            font-size: 0.8em
+            display: grid
+            grid-template-columns: 0.9fr 0.1fr 1fr
+            .spisok
+                grid-column: 1 / -1
+                ul
+                    padding-inline-start: 5%
+                    margin: 0%
+                li
+                    list-style-image: url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/minimark.svg")
+                li::marker
+                    font-size: 130%      
+    #square1
+        grid-row: 6 / 12
+        grid-column: 5 / 11
+    #square2
+        grid-row: 6 / 12
+        grid-column: 12 / -4
+        h1
+            margin-top: 0%
+            margin-bottom: 2%
+    #square3
+        grid-row: 17 / 24
+        grid-column: 2 / 8
+    #square4
+        grid-row: 18 / 23
+        grid-column: 8 / 14
+        margin: 0% 2%
+        h1
+            margin-top: 0%
+            margin-bottom: 2%
+    #square5
+        grid-row: 17 / 24
+        grid-column: 14 / -2
+    #square6
+        grid-row: 25 / 30
+        grid-column: 2 / 8
+    #square7
+        grid-row: 25 / 30
+        grid-column: 8 / 14
+        margin: 0% 2%
+        h1
+            margin-top: 0%
+            margin-bottom: 2%
+    #square8
+        grid-row: 25 / 30
+        grid-column: 14 / -2
+
+    .lines
+        grid-row: 14
+        grid-column: 5 / -5
+        h1
+            text-align: center
+        hr   
+            width: 50%
+            margin: 0% 25%
+        #down
+            margin-top: 0%
+    #lines2
+        grid-row: 31
+
+    .schedule
+        grid-row: 34 / 38
+        grid-column: 5 / -5
+        table
+            border-collapse: collapse
+            @include font2
+            background: linear-gradient(to bottom, #FFFFFF, #A7DDE9)
+            font-size: 1.6em
+        th
+            text-align: center
+            border: $border
+            font-size: 3em
+            padding: 10px
+            font-weight: lighter
+        td
+            text-align: center
+            border: $border
+            font-size: 1em
+            padding: 10px 25px

@@ -1,0 +1,61 @@
+@import 'mixins'
+@include navigation
+@include body
+@include footer
+$border: 2px solid #000000
+
+body
+    padding: 0px
+    margin: 0px
+
+.body
+    display: grid
+    grid-template-rows: repeat(25, 90px)
+    background-image: url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/backgroundcont.svg")
+    .headers
+        grid-column: 2/11 
+        display: grid
+        grid-template-rows: repeat(3, 90px)
+        grid-template-columns: repeat(9, 1fr)
+    hr
+        grid-column: 4/-1
+        margin: 14% 0%
+    h1
+        grid-column: 1/4
+    
+    .stateblock
+        grid-row: 4 / 9 
+        grid-column: 3 / 8
+        border: $border
+        text-align: center
+        overflow: hidden
+        background: linear-gradient(to bottom, #FFFFFF, #A7DDE9)
+        h3
+            margin: 8% 2%
+        .text
+            @include font1
+            font-size: 1.3em
+            text-align: left
+            margin: 4% 3% 5%
+            color: transparent
+            background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0))
+            background-clip: text
+    .li
+        @include font2
+        border: $border
+        transition: .3s linear
+        font-size: 1.5em
+        width: 40%
+        padding: 3%
+        margin: 0% 25% 
+        color: #FFFFFF
+        background-color: #000000
+    .li:hover
+        color: #000000
+        background-color: #FFFFFF
+        border-color: #000000    
+    #block2
+        grid-column: 9 / 14   
+    #block3
+        grid-column: 15 / 20    
+    

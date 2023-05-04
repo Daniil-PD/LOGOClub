@@ -1,0 +1,162 @@
+$border: 2px solid #000000
+@import 'mixins'
+
+body
+    padding: 0px
+    margin: 0px
+
+@include navigation
+
+@include body
+
+#pic1
+    display: grid
+    grid-column: 7
+    grid-row: 7
+
+@include form
+
+#marquee
+    @include font1
+    font-size: 3.1785em
+    grid-row: 11
+    grid-column: 3 / -3
+
+.circle 
+    display: grid
+    grid-template-rows: repeat(5, 90px)
+    grid-template-columns: repeat(17, 1fr)
+    grid-row: 12
+    grid-column: 2 / -3
+    img
+        grid-column: 3
+        border-radius: 50%
+        border: $border
+    #pic3
+        grid-column: 7
+    #pic4
+        grid-column: 11
+
+.arch
+    display: grid
+    grid-template-rows: repeat(9, 90px)
+    grid-template-columns: repeat(16, 96px)
+    grid-row: 19 / 29
+    grid-column: 3 / -3
+    #arch1
+        display: grid
+        grid-template-rows: repeat(9, 90px)
+        grid-template-columns: repeat(16, 96px)
+        border: $border
+        border-radius: 50% 50% 0% 0%
+        background: linear-gradient(to top, #FFFFFF, #A7DDE9) 
+        text-align: center
+        grid-row: 1 / -1
+        grid-column: 1 / 7
+    #arch2
+        display: grid
+        grid-template-rows: repeat(9, 90px)
+        grid-template-columns: repeat(16, 96px)
+        border: $border
+        border-radius: 50% 50% 0% 0%
+        background: linear-gradient(to top, #FFFFFF, #A7DDE9) 
+        text-align: center
+        grid-row: 1 / -1
+        grid-column: 11 / -1
+    .logoclubsad
+        grid-row: 2
+        grid-column: 2 / 6
+        margin: 0%
+    hr 
+        margin: 0% 25%
+        width: 50%
+    .offer
+        @include font1
+        grid-row: 4
+        margin: 0% 1% 
+        grid-column: 1 / 7
+        font-size: 1.67em
+    li
+        list-style-image: url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/mark1.svg")
+        @include font1
+        font-size: 1.3em
+        text-align: left
+    li::marker
+        font-size: 170%
+    .mark
+        margin: 0% 5%
+        grid-row: 5 
+        grid-column: 1 / 7
+    .minimark
+        li
+            list-style-image: url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/minimark.svg")
+            @include font1
+            font-size: 100%
+            text-align: left
+
+.states
+    display: grid
+    grid-template-rows: repeat(9, 90px)
+    grid-template-columns: repeat(16, 96px)
+    grid-row: 30 / 39 
+    grid-column: 3 / -3
+    hr  
+        grid-column: 7 / -8
+        margin: 0%
+    #down
+        margin-top: 50%
+    h1
+        grid-row: 1
+        grid-column: 5 / -5
+    .stateblock
+        grid-row: 4 / 9 
+        grid-column: 1 / 5
+        border: $border
+        text-align: center
+        overflow: hidden
+        background: linear-gradient(to bottom, #FFFFFF, #A7DDE9)
+        h3
+            margin: 8% 2%
+        .text
+            @include font1
+            font-size: 1.3em
+            text-align: left
+            margin: 8% 3% 5%
+            color: transparent
+            background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0))
+            background-clip: text
+    .li
+        @include font2
+        border: $border
+        transition: .3s linear
+        font-size: 1.5em
+        width: 40%
+        padding: 3%
+        margin: 0% 25% 
+        color: #FFFFFF
+        background-color: #000000
+    .li:hover
+        color: #000000
+        background-color: #FFFFFF
+        border-color: #000000    
+    #block2
+        grid-column: 7 / 11   
+    #block3
+        grid-column: 13 / 17    
+    #button
+        grid-row: 11 
+        grid-column: 5/-6
+        padding: 3% 4%
+        margin-top: -5%
+        background: #000000 url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/arr2.svg") 90% /7% no-repeat
+    #button:hover
+        background: #FFFFFF url("C:/Users/ППК/Desktop/y4ebka/вебкам/корень сайта/res/arr2b.svg") 90% /7% no-repeat
+        
+@include footer        
+
+      
+
+
+
+
+

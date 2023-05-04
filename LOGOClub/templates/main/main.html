@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Главная</title>
+    <link rel="stylesheet" href= {% static "css/stylegrid.css"%}>
+</head>
+
+<body>
+	<div class = "navigation">
+        <div class = "logo">
+            <object id = "logo" type="image/svg+xml" data={% static "res/logo.svg"%} width = 100%>
+			    <img src={% static "res/logo.png"%} alt="Фолбэк">
+		    </object>
+        </div>
+        <div class = "info">
+            г. Самара, пр. Ленина, д. 1<br>
+            <p>+7 (960) 833-44-55</p>
+        </div>
+        <div class = "menu"> 
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЗАНЯТИЯ</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+        </div>
+    </div>
+
+    <div class = "body">
+
+        <div class = "headers">
+            <h1>ЗДЕСЬ</h1> <hr>
+            <h3>рождается красивая и грамотная</h3>
+            <hr id = "line1"><h1 id = "speach">РЕЧЬ</h1>
+        </div>
+        <div class = "content">
+            <div>Мы работаем с детьми и подростками, имеющими трудности в речевом развитии, общении, эмоциональной сфере</div>
+            <div id = "ctext1">Специалисты нашего клуба поддерживают идею о том, что многие трудности в развитии можно преодолеть, только активно используя три типа ресурсов:</div>
+        </div>
+        <div id = "pic1">
+            <object type="image/svg+xml" data={% static  "res/pic1.svg"%} width="500%">
+			    <img src={% static "res/pic1.png"%} alt="Фолбэк">
+		    </object>
+        </div>
+        
+        <div id = "form">
+            <form>
+                <hr>
+                <fieldset>
+                <h1>Запись на занятие</h1>
+                <input type="text" placeholder = "ИМЯ" name = "name" required>
+                <input type="email" placeholder = "E-MAIL" name = "mail" required>
+                <input type="text" placeholder = "ТЕЛЕФОН" name = "tel" required>
+                <select required name = "type">
+                    <option selected>ВИД ЗАНЯТИЙ</option>
+                    <option> </option>
+                </select>
+                <input type="submit" name = "send" value="ОТПРАВИТЬ ЗАЯВКУ"> 
+            </fieldset>
+            </form>
+        </div>
+
+        <div id = "marquee">
+            <object id = "star1" type="image/svg+xml" data={% static "res/star1.svg"%} width="3%">
+			    <img src={% static "res/star1.png"%} alt="Фолбэк">
+		    </object>
+            ЗАНЯТИЯ С ЛУЧШИМИ ЛОГОПЕДАМИ И ПСИХОЛОГАМИ 
+            <object id="star2" type="image/svg+xml" data={% static "res/star1.svg"%} width="3%">
+			    <img src={% static "res/star1.png"%} alt="Фолбэк">
+		    </object>
+        </div>
+        
+        <div class="circle">
+            <img id ="pic2" src={% static "res/kids1.png"%} alt="" width = "500%" height="500%">
+            <img id ="pic4" src={% static "res/kids.png"%} alt="" width = "500%" height="500%">
+            <img id ="pic3" src={% static "res/kids1.png"%} alt="" width = "500%" height="500%">
+        </div>
+
+        <div class = "arch">
+            <div id="arch1">
+                <h1 class = "logoclubsad">ЛОГО<br><hr>сад</h1>
+                <div class="offer">
+                    Мы рады предложить вам посещение ЛОГОсадика на полдня
+                </div>
+                <div class="mark">
+                    <ul>
+                        <li>Логоритмика 3 раза в неделю <br>(воспитатель с музыкальным образованием)</li>
+                        <li>Запуск и развитие речи 2 раза в неделю <br>(логопед)</li> 
+                        <li>Артикуляционная и дыхательная гимнастика ежедневно <br>(воспитатель и логопед)</li>
+                        <li>Игры на развитие фонематического восприятия ежедневно <br>(воспитатель)</li>
+                        <li>Образовательная программа для детей младшего возраста по ФГОС <br>(воспитатель)</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="arch2">
+                <h1 class = "logoclubsad">ЛОГО<br><hr>клуб</h1>
+                <div class="offer">
+                    Мы рады предложить вам групповые и индивидуальные занятия по коррекции речи и общения детей с 1,5 лет 
+                </div>
+                <div class="mark">
+                    <ul>
+                        <li>Консультация логопеда</li>
+                        <li>Индивидуальные занятия с логопедом</li> 
+                        <li>Групповые занятия
+                            <ul class="minimark">
+                                <li>Запуск речи с мамой</li>
+                                <li>Обучайка+ (развивающие занятия для детей с ЗПРР)</li>
+                                <li>Обучайка (развитие речи и мышления в минигруппе)</li>
+                                <li>Чтение с логопедом </li>
+                                <li>Подготовка к школе</li>
+                                <li>Обучение рассказыванию</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "states">
+            <hr>
+            <h1>ПОЛЕЗНЫЕ СТАТЬИ</h1>
+            <hr id="down">
+
+            <div class="stateblock">
+                <h3>Причины нарушения слоговой структуры</h3>
+                <object type="image/svg+xml" data={% static "res/staryell.svg"%} width = 10%>
+                    <img src={% static "res/staryell.png"%} alt="Фолбэк">
+                </object>
+                <div class="text">
+                    В последнее время возникла какая-то путаница при определении причин нарушения слоговой структуры. Большинство логопедов зациклилось на ритмах, забыв отделить очень важную причину. Почему-то ...
+                </div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЧИТАТЬ</div>
+            </div>
+
+            <div class="stateblock" id="block2">
+                <h3>Причины нарушения слоговой структуры</h3>
+                <object type="image/svg+xml" data={% static "res/staryell.svg"%} width = 10%>
+                    <img src={% static "res/staryell.png"%} alt="Фолбэк">
+                </object>
+                <div class="text">
+                    В последнее время возникла какая-то путаница при определении причин нарушения слоговой структуры. Большинство логопедов зациклилось на ритмах, забыв отделить очень важную причину. Почему-то ...
+                </div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЧИТАТЬ</div>
+            </div>
+
+            <div class="stateblock" id="block3">
+                <h3>Причины нарушения слоговой структуры</h3>
+                <object type="image/svg+xml" data={% static "res/staryell.svg"%} width = 10%>
+                    <img src={% static "res/staryell.png"%} alt="Фолбэк">
+                </object>
+                <div class="text">
+                    В последнее время возникла какая-то путаница при определении причин нарушения слоговой структуры. Большинство логопедов зациклилось на ритмах, забыв отделить очень важную причину. Почему-то ...
+                </div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЧИТАТЬ</div>   
+            </div>
+            <div class = "li" id="button" onclick="location.href='#';" style="cursor:pointer;">БОЛЬШЕ СТАТЕЙ</div>
+        </div>
+
+    </div>
+    
+    
+    <div class="footer">
+        <hr> <p>Мы делаем свою работу на „отлично”!</p> <hr id="right">
+        <div class="finfo">
+            <div class = "menu"> 
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">КОНТАКТЫ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЗАНЯТИЯ</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">ЛОГОСАД</div>
+                    <div class = "li" onclick="location.href='#';" style="cursor:pointer;">О КЛУБЕ</div>
+            </div>
+            <form>
+                <fieldset>
+                <input type="text" placeholder = "ИМЯ" name = "name" required>
+                <input type="email" placeholder = "E-MAIL" name = "mail" required>
+                <input type="text" placeholder = "ТЕЛЕФОН" name = "tel" required>
+                <select required name = "type">
+                    <option selected>ВИД ЗАНЯТИЙ</option>
+                    <option> </option>
+                </select>
+                <input type="submit" name = "send" value="ОТПРАВИТЬ"> 
+            </fieldset>
+            </form>
+            <div class = "info">
+                <p>г. Самара, пр. Ленина, д. 1<br>
+                +7 (960) 833-44-55<br>
+                logoclub63@yandex.ru<br>
+                <a href="#"><object class = "link" type="image/svg+xml" data={% static "res/youtube.svg"%} width = 10%>
+                    <img src={% static "res/youtube.png"%} alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data={% static "res/vk.svg"%} width = 10%>
+                    <img src={% static "res/vk.png"%} alt="Фолбэк">
+                </object></a>
+                <a href="#"><object class="link" type="image/svg+xml" data={% static "res/watsap.svg"%} width = 7%>
+                    <img src={% static "res/watsap.png"%} alt="Фолбэк">
+                </object></a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
